@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
     </script>
+    <link href = "./style.css" rel = "stylesheet">
   </head>
   <body style = "background-color: #2E3047;">
     <nav class="navbar navbar-expand-lg sticky-top border-bottom border-light" style="background-color: #2E3047;">
@@ -37,7 +38,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Additional Resources</a>
+              <a class="nav-link text-white" href="./Additional.html">Additional Resources</a>
             </li>
             
           </ul>
@@ -45,6 +46,48 @@
       </div>
       
     </nav>
+    <div class = "row pt-1 justify-content-around"> 
+      <div class = "pt-5 pb-5 mt-3 container-fluid rounded-pill border border-light border-2" style = "background-color: #3C3F58;">
+        <h1 class = "text-center peach" style = "font-family: Comic Sans MS;">Unit 5 : Sampling Distributions</h1>
+   
+      </div> 
+      <div class = "col-6 mt-5 pt-4 border rounded border-1 border-light" style = "background-color: #707793;">
+        <h3 class = " text-center peach comic pb-1 " >Important Concepts</h3>
+        <ul>
+          <li>A statistic describes information about a sample, while a parameter describes information about the population.  While we may not know the value of everybody in a population, we can make inferences about it from a statistic(s)</li>
+          <li>The population distribution describes the distribution of values of the variable across the entire population, while the sampling distribution describes the values of statistics (such as mean) across all possible samples of the same size</li>
+          <li class = "pt-4">Statistic</li>
+          <ul>
+            <li>A statistic is an unbiased estimator of a parameter if the mean of its sampling distribution is equal to the true value of the corresponding parameter, and it is biased if said values are not equal</li>
+            <li>The variability of a statistic describes the spread of its sampling distribution; larger samples result in lower variability and spread</li>
+          </ul>
+          <li class = "pt-4">Parameters</li>
+          <ul>
+            <li>When estimating the parameter, aim for low to no bias and minimal variability
+            </li>
+            <li>When we want to investigate a population proportion p, we can take a simple random sample and use the sample proportion p hat to estimate p</li>
+            <li>The sampling distribution then describes the statistic p hat over all possible samples of the same size over the population.
+            </li>
+            <li>The center of p hat is its mean = p, the population proportion, meaning it is an unbiased estimator</li>
+          </ul>
+          <li class = "pt-4">Conditions</li>
+          <ul>
+            <li> Large Counts Conditions :With one population, the shape is approximately normal if both the expected number of failures (n * (1-p)) and successes (n*p) are greater than or equal to 10</li>
+            <li>10% Condition : The variability or standard deviation of the distribution is approximately square root (p*(1-p)/n) (or p hat) when the sample size is less than 10% of the population size</li>
+
+          </ul>
+          <li class = "pt-4">When we want to investigate a sample mean μ, we can take an SRS and use the sample mean x hat to estimate μ. The sampling distribution then describes how the statistic x hat varies over all possible samples of the same size n over the entire population</li>
+          <ul>
+            <li>Shape: According to the Central Limit Theorem, even if the population distribution is not normal, the sampling distribution is approximately normal when n is sufficiently large, which is to say at least 30.  The sampling distribution would also be normal if the population distribution is normal</li>
+            <li>Center: The mean of the sampling distribution would be the population mean μ, meaning the mean is an unbiased estimator</li>
+            <li>Variability: The standard deviation of the sampling distribution is about σ/ square root n, where σ is the standard deviation of the population.  This can be used when the sampling size is less than 10% of the population size (10% condition)</li>
+          </ul>
+        </ul>
+      </div>
+      
+    </div>
+    
+
   </body>
 </html>
 

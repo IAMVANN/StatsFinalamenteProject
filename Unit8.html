@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
     </script>
+    <link href = "./style.css" rel = "stylesheet">
   </head>
   <body style = "background-color: #2E3047;">
     <nav class="navbar navbar-expand-lg sticky-top border-bottom border-light" style="background-color: #2E3047;">
@@ -37,7 +38,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Additional Resources</a>
+              <a class="nav-link text-white" href="./Additional.html">Additional Resources</a>
             </li>
             
           </ul>
@@ -45,6 +46,74 @@
       </div>
       
     </nav>
+    <div class = "row pt-1 justify-content-around"> 
+      <div class = "pt-5 pb-5 mt-3 container-fluid rounded-pill border border-light border-2" style = "background-color: #3C3F58;">
+        <h1 class = "text-center peach" style = "font-family: Comic Sans MS;">Unit 8 : Inference for Categorical Data: Chi-Square </h1>
+   
+      </div> 
+      <div class = "col-6 mt-5 pt-4 border rounded border-1 border-light" style = "background-color: #707793;">
+        <h3 class = " text-center peach comic pb-1 " >Important Concepts</h3>
+        <ul>
+          <li>A chi square test of goodness of fit tests the null hypothesis that a categorical variable has some specific distribution in the relevant population.  The alternative hypothesis is that the distribution of said categorical variable does not have the specific distribution in the population</li>
+          <ul>
+            <li>This compares the observed counts in the sample from each category of the categorical value with the expected in said category, which is the sample size multiplied by the population proportion given in the null hypothesis</li>
+          </ul>
+          <li class = "pt-4">The chi square test statistic is χ2= summation of (Observed Count - Expected Count)^2/Expected Count, over all categories of the categorical variable (one can find which categories contribute most to the chi square test statistic later)</li>
+          <ul>
+            <li>Conditions</li>
+            <ul>
+              <li>
+                Random (random sample in the population of interest)
+              </li>
+              <li> 10% condition  when sampling without replacement (n&lt0.1N)</li>
+              <li>Large Counts (all expected counts are at least 5)</li>
+            </ul>
+            <li class = "pt-4">Large values of the chi square test statistics are evidence against the null hypothesis, and df, or the degrees of freedom, is the number of categories - 1
+            </li>
+            <li>One can find the p value using the test statistic with the chi square distribution with the appropriate number of degrees of freedom, where the p value is the area to the right of the test statistic.
+            </li>
+            <li class = "pt-4">A chi square test for homogeneity is used to compare distributions of a categorical variable across multiple populations, with the null hypothesis being that the distributions across populations are the same, and not the same for the alternative hypothesis</li>
+            <ul>
+              <li>
+                Conditions
+              </li>
+              <ul>
+                <li>Random Sample/Assignment</li>
+                <li>10% condition</li>
+                <li>Large Counts Condition</li>
+              </ul>
+            </ul>
+            <li>The degrees of freedom is the number of populations -1 multiplied by the number of categories of the categorical variable -1  
+            </li>
+            <li>When putting the populations in a two way table, one can calculate expected for each cell by using the formula expected count = row total * column total / table total = specific population total * category total / total sample size</li>
+            <li>The chi square test statistic is the same from goodness of fit, or χ2= summation of (Observed Count - Expected Count)^2/Expected Count, over all cells (except the totals) of the two way table</li>
+            <li>One thereby can calculate the p value in the same way with the appropriate chi square distribution with correct df and using the area to the right of the test statistic
+            </li>
+            <li class = "pt-4">A chi square test for independence is used to test the association between two categorical variables, with the null hypothesis being that there is no association</li>
+            <ul>
+              <li>Conditions</li>
+              <ul>
+                <li>Random</li>
+                <li>10% Condition</li>
+                <li>All expected counts are atleast 5</li>
+                <ul>
+                  <li>expected count = row total *column total/table total in a two way table
+                  </li>
+                </ul>
+              </ul>
+            </ul>
+            <li>The chi square test statistic is the same from goodness of fit and homogeneity, or χ2= summation of (Observed Count - Expected Count)^2/Expected Count, over all cells (except the totals) of the two way table.  The degrees of freedom is the (number of rows - 1)(number of columns-1). (not counting any total columns or rows)
+            </li>
+            <li>One can calculate the p value the same way as before by using a chi square distribution of appropriate degrees of freedom and using the area to the right of the test statistic
+            </li>
+            <li>Note that the expected counts of anything should not be rounded to a whole number.</li>
+          </ul>
+        </ul>
+      </div>
+      
+    </div>
+    
+
   </body>
 </html>
 
